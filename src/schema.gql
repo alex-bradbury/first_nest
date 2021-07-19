@@ -13,10 +13,14 @@ type Query {
   hello: String!
   mongo: String!
   books: [Book!]!
+  findBookByTitle(input: String!): Book!
+  findBookById(input: String!): Book!
 }
 
 type Mutation {
   createBook(input: CreateBookDto!): Book!
+  updateBook(id: String!, input: CreateBookDto!): Book!
+  deleteBook(input: String!): Book!
 }
 
 input CreateBookDto {

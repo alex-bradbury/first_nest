@@ -26,4 +26,24 @@ export class BooksResolver {
     async createBook(@Args('input') input: CreateBookDto) {
         return this.booksService.create(input);
     }
+
+    @Mutation(returns => Book)
+    async updateBook(@Args('input') input: CreateBookDto, @Args('id') id: string) {
+        return this.booksService.update(id, input);
+    }
+
+    @Mutation(returns => Book)
+    async deleteBook(@Args('input') input: string) {
+        return this.booksService.delete(input);
+    }
+
+    @Query(returns => Book)
+    async findBookByTitle(@Args('input') input: string) {
+        return this.booksService.findOneTitle(input);
+    }
+
+    @Query(returns => Book)
+    async findBookById(@Args('input') input: string) {
+        return this.booksService.findOneTitle(input);
+    }
 }

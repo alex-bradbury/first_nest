@@ -13,7 +13,23 @@ export class BooksService {
         return createdBook.save();
     }
 
+    async findOneTitle(search: string): Promise<Book> {
+        return this.bookModel.findOne({ title: search });
+    }
+
+    async findOneId(id: string): Promise<Book> {
+        return this.bookModel.findById(id);
+    }
+
+    async delete(id: string): Promise<Book> {
+        return this.bookModel.findByIdAndDelete(id);
+    }
+
     async findAll(): Promise<Book[]> {
         return this.bookModel.find().exec();
+    }
+
+    async update(id: string, createBookDto: CreateBookDto): Promise<Book> {
+        return this.bookModel.findByIdAndUpdate(id, createBookDto);
     }
 }
