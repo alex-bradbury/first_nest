@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Book {
+  id: ID!
+  title: String!
+  genre: String!
+  author: String!
+}
+
+type Query {
+  hello: String!
+  mongo: String!
+  books: [Book!]!
+}
+
+type Mutation {
+  createBook(input: CreateBookDto!): Book!
+}
+
+input CreateBookDto {
+  title: String!
+  genre: String!
+  author: String!
+}
