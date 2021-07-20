@@ -6897,6 +6897,11 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
+"nestjs@^0.0.1":
+  "integrity" "sha1-5LO4L7vQu/mTp8ehN7OtWczs9rY="
+  "resolved" "https://registry.npmjs.org/nestjs/-/nestjs-0.0.1.tgz"
+  "version" "0.0.1"
+
 "nice-try@^1.0.4":
   "integrity" "sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ=="
   "resolved" "https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz"
