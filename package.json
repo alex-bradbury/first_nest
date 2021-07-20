@@ -29,16 +29,17 @@
     "@nestjs/mongoose": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
     "apollo": "^2.33.4",
-    "apollo-server-express": "2.x.x",
+    "apollo-server-express": "^3.0.1",
     "dotenv": "^10.0.0",
     "graphql": "^15.5.1",
     "graphql-tools": "^7.0.5",
-    "jwt": "^0.2.0",
     "mongoose": "^5.13.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "ts-morph": "^11.0.3"
+    "ts-morph": "^11.0.3",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.5"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
