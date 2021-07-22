@@ -1,1 +1,1 @@
-web: npm run start:prod
+web: npm run start:prod; npm run build; npm install -g @nestjs/cli
